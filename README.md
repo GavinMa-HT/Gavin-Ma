@@ -31,7 +31,7 @@
 </head>
 <body>
     <h1>Hello! I'm Gavin Ma</h1>
-    <img src="https://www.dropbox.com/scl/fi/ofjj7wboqb2pbkbbwe3cj/cb0331ca6bc136f36199e9a64e72d1b.jpg?rlkey=ia1vro1uokg1wjwbgcfjzcxva&st=udzngekn&dl=0" alt="My Photo">
+    <img src="https://i.imgur.com/SB2xjxD.jpg" alt="My Photo">
     <p>I come from a small village in Enshi, Hubei. After more than a decade of academic journey, I entered university and spent four years at Hubei University of Technology. During my time there, I served as both the class monitor and the president of the student union.</p>
     <p>These diverse experiences, combined with the current employment landscape, made me realize the importance of practical skills. Understanding that university is the best time to learn through trial and error, I began taking internships during winter and summer breaks from my freshman year. I worked as a tutor, telemarketer, event salesperson, Amazon operations assistant, and foreign trade salesperson.</p>
     <p>In October 2023, I participated in campus recruitment and officially joined Joyroom as part of the Overseas Sales Department I. Over the past year, I’ve gained substantial knowledge of international business and currently focus on the Southeast European market while exploring opportunities in the African market.</p>

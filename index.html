@@ -102,6 +102,19 @@
         .icons img:hover {
             transform: scale(1.2);
         }
+
+        /* Ensure the carousel images scale well on mobile devices */
+        @media (max-width: 768px) {
+            .carousel img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .carousel {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>

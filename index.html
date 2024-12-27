@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Gavin Ma</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #4CAF50;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content-left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-right {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-left img, .content-right img {
+            margin: 10px;
+        }
+        .text {
+            max-width: 600px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .text h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .carousel img {
+            width: 33.33%;
+            transition: transform 1s ease-in-out;
+        }
+        .carousel-prev, .carousel-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .carousel-prev {
+            left: 10px;
+        }
+        .carousel-next {
+            right: 10px;
+        }
+        .icons img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Section background colors */
+        .section-1 {
+            background-color: #f0f8ff; /* AliceBlue */
+        }
+        .section-2 {
+            background-color: #f5f5dc; /* Beige */
+        }
+        .section-3 {
+            background-color: #f0e68c; /* Khaki */
+        }
+        .section-4 {
+            background-color: #dcdcdc; /* Gainsboro */
+        }
+        .section-5 {
+            background-color: #e6ffe6; /* Honeydew */
+        }
+        .section-6 {
+            background-color: #ffebcd; /* BlanchedAlmond */
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .carousel img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .carousel {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+            }
+            .carousel img {
+                transition: none; /* Remove transition for mobile */
+            }
+        }
+
+        /* Desktop-specific styles */
+        @media (min-width: 769px) {
+            .carousel img {
+                width: 33.33%;
+                transition: transform 1s ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <h1>About Me - Gavin Ma</h1>
+
+    <!-- Avatar -->
+    <div>
+        <img src="https://i.imgur.com/EEXyqij.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <!-- Summary -->
+    <div class="section section-1">
+        <p>Hello! I'm Gavin Ma, a passionate individual who believes that life is shaped by both the experiences we seek and the challenges we overcome. Growing up in a small village in Enshi, Hubei, I have always had a curious mind and a desire to explore new opportunities.</p>
+        <p>Over the years, I have dedicated myself to both academic pursuits and hands-on work experiences. From my time at Hubei University of Technology, where I served as class monitor and student union president, to my internships in various fields, each step has provided valuable lessons. These experiences have shaped my understanding of leadership, communication, and the importance of practical skills in today’s fast-paced world.</p>
+        <p>Since joining Joyroom in 2024, I have been focused on expanding our reach into Southeast European and African markets, while constantly evolving as an overseas sales representative. My journey has taught me that <strong>"Belief is the beginning of all possibilities—life knows no limits."</strong></p>
+    </div>
+
+    <!-- Academic Experience -->
+    <div class="section section-2 content-left">
+        <div class="carousel" id="carousel-academic">
+            <img src="https://i.imgur.com/AGMX3LD.jpeg" alt="Image 1">
+            <img src="https://i.imgur.com/qASosJf.jpeg" alt="Image 2">
+            <img src="https://i.imgur.com/AYvIrCb.jpeg" alt="Image 3">
+        </div>
+        <div class="text">
+            <h2>Academic Experience</h2>
+            <p>During my time at university, I not only focused on my studies but also embraced leadership roles. Serving as class monitor and president of the student union allowed me to refine my organizational and problem-solving skills. It was here that I learned the value of teamwork, time management, and creating opportunities for others.</p>
+            <p>In addition to academics, I made it a point to explore real-world experiences. Starting from my freshman year, I worked as a tutor, telemarketer, event salesperson, Amazon operations assistant, and foreign trade salesperson during the breaks. These roles helped me learn how to adapt quickly, communicate effectively, and gain hands-on insights into business operations.</p>
+        </div>
+    </div>
+
+    <!-- Internship Experience -->
+    <div class="section section-3 content-right">
+        <div class="carousel" id="carousel-internship">
+            <img src="https://i.imgur.com/FyTCu5j.jpeg" alt="Image 1">
+            <img src="https://i.imgur.com/zQxB62g.jpeg" alt="Image 2">
+            <img src="https://i.imgur.com/2tpIXmj.jpeg" alt="Image 3">
+        </div>
+        <div class="text">
+            <h2>Internship Experience</h2>
+            <p>My internships were pivotal in my growth as a professional. I gained firsthand experience in different industries, honing my ability to work in diverse environments. As an Amazon operations assistant, I developed an understanding of e-commerce and digital marketing strategies. Later, my role as a foreign trade salesperson allowed me to engage with international clients, strengthening my cross-cultural communication and negotiation skills.</p>
+            <p>Each of these experiences reinforced my belief in the importance of continuous learning and the value of taking initiative. I realized that every opportunity, big or small, has the potential to teach us something valuable.</p>
+        </div>
+    </div>
+
+    <!-- Joyroom Experience -->
+    <div class="section section-4 content-left">
+        <div class="carousel" id="carousel-joyroom">
+            <img src="https://i.imgur.com/aIKIuwF.jpeg" alt="Image 1">
+            <img src="https://i.imgur.com/HFuKJOL.jpeg" alt="Image 2">
+            <img src="https://i.imgur.com/d1qQJKt.jpeg" alt="Image 3">
+        </div>
+        <div class="text">
+            <h2>Joyroom Experience</h2>
+            <p>In October 2023, I joined Joyroom, where I became part of the Overseas Sales Department. Here, I quickly learned the intricacies of international trade and business development. My primary focus has been on expanding our presence in Southeast Europe, and I am now working on identifying new opportunities in Africa.</p>
+            <p>At Joyroom, I have been able to apply my skills in market research, product localization, and sales strategy. The work is challenging, but it has been incredibly rewarding to see our efforts translate into real-world success.</p>
+        </div>
+    </div>
+
+    <!-- Life Reflections -->
+    <div class="section section-5 content-right">
+        <div class="carousel" id="carousel-life">
+            <img src="https://i.imgur.com/QQUYIXM.jpeg" alt="Image 1">
+            <img src="https://i.imgur.com/skS5qHQ.jpeg" alt="Image 2">
+            <img src="https://i.imgur.com/811UZuo.jpeg" alt="Image 3">
+        </div>
+        <div class="text">
+            <h2>Life Reflections</h2>
+            <p>Reflecting on my journey, I’ve realized that success isn’t just about reaching a destination, but about the lessons we learn along the way. Each experience, whether positive or challenging, has shaped who I am today. I’ve learned that the key to success is adaptability, resilience, and a willingness to take risks.</p>
+            <p>The future is full of possibilities, and I am excited about the opportunities that lie ahead. I am committed to continuing my growth, both professionally and personally, as I look toward achieving even greater success in the global marketplace.</p>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="section section-6" style="text-align: center;">
+        <h2>Contact Me</h2>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/gavin-m-655669202/" target="_blank">
+                <img src="https://i.imgur.com/PUKTGHh.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/+8615914145241" target="_blank">
+                <img src="https://i.imgur.com/erHF4E0.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:GavinMa@joyroom.com" target="_blank">
+                <img src="https://i.imgur.com/yl3oru8.png" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to enable the image carousel functionality
+        let currentIndexAcademic = 0;
+        let currentIndexInternship = 0;
+        let currentIndexJoyroom = 0;
+        let currentIndexLife = 0;
+
+        function changeImage(id, currentIndex) {
+            let carousel = document.getElementById(id);
+            let images = carousel.getElementsByTagName('img');
+            let newIndex = (currentIndex + 1) % images.length;
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.transform = `translateX(-${newIndex * 100}%)`;
+            }
+            return newIndex;
+        }
+
+        // Set interval to change images every 3 seconds for desktop only
+        if (window.innerWidth > 768) {
+            setInterval(() => { currentIndexAcademic = changeImage("carousel-academic", currentIndexAcademic); }, 3000);
+            setInterval(() => { currentIndexInternship = changeImage("carousel-internship", currentIndexInternship); }, 3000);
+            setInterval(() => { currentIndexJoyroom = changeImage("carousel-joyroom", currentIndexJoyroom); }, 3000);
+            setInterval(() => { currentIndexLife = changeImage("carousel-life", currentIndexLife); }, 3000);
+        }
+    </script>
+
+</body>
+</html>
